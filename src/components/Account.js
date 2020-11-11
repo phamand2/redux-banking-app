@@ -13,11 +13,11 @@ export default function Account({title, id}) {
 
 
   const handlePlus = () => {
-    dispatch(increment(parseFloat(value, 10), id))
+    dispatch(increment(parseInt(value, 10), id))
   }
 
   const handleMinus = () => {
-    dispatch(decrement(parseFloat(value, 10), id))
+    dispatch(decrement(parseInt(value, 10), id))
   }
 
   return (
